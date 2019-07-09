@@ -47,4 +47,21 @@ public class SalaryModel{
 	@Column(name="TAKE_HOME_PAY")
 	private double takeHomePay;
 	
+	public void update(SalaryModel newSalaryModel){
+		this.nik=newSalaryModel.nik;
+		this.salaryDate=newSalaryModel.salaryDate;
+		this.baseSalary=newSalaryModel.baseSalary;
+		this.familyAllowance=newSalaryModel.familyAllowance;
+		this.employeeAllowance=newSalaryModel.employeeAllowance;
+		this.transportAllowance=newSalaryModel.transportAllowance;
+		this.grossSalary=newSalaryModel.grossSalary;
+		this.PPH=newSalaryModel.PPH;
+		this.BPJS=newSalaryModel.BPJS;
+		this.netSalary=newSalaryModel.netSalary;
+		this.lengthOvertime=newSalaryModel.lengthOvertime;
+		this.overtimePay=newSalaryModel.overtimePay;
+		this.bonusVariable=newSalaryModel.bonusVariable;
+		this.bonusPay=newSalaryModel.bonusPay;
+		this.takeHomePay=newSalaryModel.takeHomePay;
+	}
 }

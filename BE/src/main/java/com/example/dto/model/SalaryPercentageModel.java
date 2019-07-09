@@ -17,7 +17,7 @@ import lombok.Setter;
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
-@Entity(name="penempatan")
+@Entity(name="presentase_gaji")
 public class SalaryPercentageModel {
 
 
