@@ -31,8 +31,23 @@ export default {
       icon: 'icon-list',
     },
     {
+      name: 'Detail Zharfan',
+      url: '/detail-zharfan/DetailZharfan',
+      icon: 'icon-user',
+    },
+    {
       name: 'Add Karyawan',
       url: '/AddKaryawan',
+      icon: 'icon-list',
+    },
+    {
+      name: 'Detail Karyawan',
+      url: '/detail-karyawan',
+      icon: 'icon-people',
+    },
+    {
+      name: 'Show Karyawan',
+      url: '/Agung',
       icon: 'icon-list',
     },
   ],
