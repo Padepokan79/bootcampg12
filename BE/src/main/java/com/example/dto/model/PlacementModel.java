@@ -30,6 +30,6 @@ public class PlacementModel {
   private String cityPlacement;
 
 @Column (name="UMK_PENEMPATAN")
-private String minSalaryPlacement;
+private Double minSalaryPlacement;
 
 }
