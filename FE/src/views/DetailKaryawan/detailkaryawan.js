@@ -42,11 +42,8 @@ class detailkaryawan extends Component {
       <>
         <TabPane tabId="1">
         <Row>
-          <Col xs="12" lg="6">
+          <Col xs="12" lg="12">
             <Card>
-              <CardHeader>
-                <i className="fa fa-align-justify"></i> Simple Table
-              </CardHeader>
               <CardBody>
                 <Table responsive>
                   <thead>
@@ -156,7 +153,7 @@ class detailkaryawan extends Component {
         </TabPane>
         <TabPane tabId="2">
         <Row>
-            <Col xs="12" lg="6">
+            <Col xs="12" lg="12">
             <Card>
             <CardBody>
                 <Table responsive bordered>
