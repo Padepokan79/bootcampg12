@@ -40,7 +40,8 @@ const FraudReportForm = React.lazy(() => import('./views/FraudReportForm/FraudRe
 const FraudList = React.lazy(() => import('./views/FraudList/FraudList'));
 const KaryawanList = React.lazy(() => import('./views/KaryawanList/KaryawanList'));
 const ListKaryawan = React.lazy(() => import('./views/ListKaryawan/ListKaryawan'));
-const InputKaryawan = React.lazy(() => import('./views/InputKaryawan/inputkaryawan'));
+const InputKaryawan = React.lazy(() => import('./views/InputKaryawan/InputKaryawan'));
+const DetailZharfan = React.lazy(() => import('./views/DetailZharfan/DetailZharfan'));
 
 
 // https://github.com/ReactTraining/react-router/tree/master/packages/react-router-config
@@ -91,6 +92,7 @@ const routes = [
   { path: '/karyawan-list', name: 'Karyawan List', component: KaryawanList },
   { path: '/list-karyawan', name: 'List Karyawan', component: ListKaryawan },
   { path: '/InputKaryawan', name: 'Input Karyawan', component: InputKaryawan },
+  { path: '/detail-zharfan', name: 'Detail Zharfan', component: DetailZharfan },
 ];
 
 export default routes;

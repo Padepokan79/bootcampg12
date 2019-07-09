@@ -30,5 +30,10 @@ export default {
       url: '/list-karyawan',
       icon: 'icon-list',
     },
+    {
+      name: 'Detail Zharfan',
+      url: '/detail-zharfan/DetailZharfan',
+      icon: 'icon-user',
+    }
   ],
 };
