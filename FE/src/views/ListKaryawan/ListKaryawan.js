@@ -21,7 +21,7 @@ class DataKaryawan extends Component{
       danger: false,
       error : null,
       isLoaded : false,
-      dataKaryawan: [], temp:[], religion:[],placement:[], position:[], level:[],
+      dataKaryawan: [], religion:[],placement:[], position:[], level:[],
       setCitIdNumber: '',
       setNik: '',
       setName: '',
@@ -137,10 +137,6 @@ class DataKaryawan extends Component{
     this.loadData();
   }
 
-  componentDidMount() {
-    this.getState();
-  }
-
   loadData() {
 
     let handleResponse = function (response) {
@@ -149,10 +145,16 @@ class DataKaryawan extends Component{
     }
 
     var url = 'http://10.10.10.15:9090/employee';
-    this.fetchData('http://10.10.10.15:9090/employee');
+    fetch(url
+      ).then(handleResponse)
+       .then(data => {
+         console.log(data);
+         this.setState({
+             dataKaryawan: data
+         })
+       });
 
     url = 'http://10.10.10.15:9090/religion';
-
     fetch(url
      ).then(handleResponse)
       .then(data => {
@@ -192,24 +194,6 @@ class DataKaryawan extends Component{
          })
        });
   }
-
-
-  fetchData(url) {
-    fetch(url
-      ).then(response => response.json())
-       .then(data => {
-         console.log(data);
-         this.setState({
-           temp:data
-        })
-       });
-  }
-  getState() {
-    this.setState({
-      dataKaryawan:this.state.temp
-    })
-  }
-  
     
   render() {
     {console.log(this.state.dataKaryawan);}
@@ -276,6 +260,7 @@ class DataKaryawan extends Component{
                     <ButtonGroup>
                       <Button type="button" Style="width:35px;" color="warning" onClick={() => this.toggleWarning(data.citIdNumber, data.nik, data.name, data.address, data.birthDate, data.gender, data.religionId, data.marriageStatus, data.childCount, data.placementId, data.positionId, data.levelId, data.workPeriod, data.beginContract, data.endContract)}><i className="fa fa-edit"></i></Button>
                       <Button type="button" Style="width:35px;" color="danger" onClick={() => this.toggleDanger(data.nik)}><i className="fa fa-trash"></i></Button>
+                      <a href="../#/DetailKaryawan" type="button" Style="width:35px;"><Button color="primary"><i className="fa fa-eye"></i></Button></a>
                     </ButtonGroup>
                     </td>
                   </tr>
