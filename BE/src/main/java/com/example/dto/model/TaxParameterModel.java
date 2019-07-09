@@ -64,7 +64,7 @@ public class TaxParameterModel {
 	  private double positionAllowance;
 	  
 	  
-	  @Column(name="MAX_BIAYA-JABATAN")
+	  @Column(name="MAX_BIAYA_JABATAN")
 	  private double maxDepartmentCost;
 	  
 	  
