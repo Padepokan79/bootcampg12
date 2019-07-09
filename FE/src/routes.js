@@ -1,5 +1,6 @@
 import React from 'react';
 import DefaultLayout from './containers/DefaultLayout';
+import Agung from './views/showKaryawan/Agung';
 
 const Breadcrumbs = React.lazy(() => import('./views/Base/Breadcrumbs'));
 const Cards = React.lazy(() => import('./views/Base/Cards'));
@@ -93,6 +94,7 @@ const routes = [
   { path: '/list-karyawan', name: 'List Karyawan', component: ListKaryawan },
   { path: '/InputKaryawan', name: 'Input Karyawan', component: InputKaryawan },
   { path: '/AddKaryawan', name: 'Add Karyawan', component: AddKaryawan },
+  { path: '/Agung', name: 'Show Karyawan', component: Agung },
 ];
 
 export default routes;
