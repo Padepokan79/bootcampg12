@@ -18,11 +18,11 @@ public class ParameterModel {
 	@Column(name ="TB_PARAMETER")
 	private String tbParameter;
 	@Column(name ="T_KELUARGA")
-	private Double bFamily;
+	private Double familyAllowance;
 	@Column(name ="T_TRANSPORT")
-	private Double bTransport;
+	private Double transportAllowance;
 	@Column(name ="P_BPJS")
-	private Double tBpjs;
+	private Double BPJS;
 	@Column(name ="LEMBUR")
 	private Double overtime;
 	@Column(name ="BONUS_PG")
@@ -40,17 +40,17 @@ public class ParameterModel {
 	@Column(name ="MAX_BONUS")
 	private Double maxBonus;
 
-	public Double getBfamily() {
-		return bFamily;
+	public Double getFamilyAllowance() {
+		return familyAllowance;
 	}
-	public void setBfamily(Double bFamily) {
-		this.bFamily = bFamily;
+	public void setFamilyAllowance(Double familyAllowance) {
+		this.familyAllowance = familyAllowance;
 	}
-	public Double getBtransport() {
-		return bTransport;
+	public Double getTransportAllowance() {
+		return transportAllowance;
 	}
-	public void setBtransport(Double bTransport) {
-		this.bTransport = bTransport;
+	public void setTransportAllowance(Double transportAllowance) {
+		this.transportAllowance = transportAllowance;
 	}
 	public Double getBonusPg() {
 		return bonusPg;
@@ -95,11 +95,11 @@ public class ParameterModel {
 	public void setOvertime(Double overtime) {
 		this.overtime = overtime;
 	}
-	public Double getTbpjs() {
-		return tBpjs;
+	public Double getBPJS() {
+		return BPJS;
 	}
-	public void setTbpjs(Double tBpjs) {
-		this.tBpjs = tBpjs;
+	public void setBPJS(Double BPJS) {
+		this.BPJS = BPJS;
 	}
 	
 	
