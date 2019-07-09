@@ -35,5 +35,10 @@ export default {
       url: '/AddKaryawan',
       icon: 'icon-list',
     },
+    {
+      name: 'Detail Karyawan',
+      url: '/detail-karyawan',
+      icon: 'icon-people',
+    },
   ],
 };

@@ -94,7 +94,7 @@ const routes = [
   { path: '/list-karyawan', name: 'List Karyawan', component: ListKaryawan },
   { path: '/InputKaryawan', name: 'Input Karyawan', component: InputKaryawan },
   { path: '/AddKaryawan', name: 'Add Karyawan', component: AddKaryawan },
-  { path: '/DetailKaryawan', name: 'Detail Karyawan', component: detailkaryawan },
+  { path: '/detail-karyawan', name: 'Detail Karyawan', component: detailkaryawan },
 ];
 
 export default routes;
