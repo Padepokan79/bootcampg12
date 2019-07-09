@@ -42,6 +42,7 @@ const KaryawanList = React.lazy(() => import('./views/KaryawanList/KaryawanList'
 const ListKaryawan = React.lazy(() => import('./views/ListKaryawan/ListKaryawan'));
 const InputKaryawan = React.lazy(() => import('./views/InputKaryawan/inputkaryawan'));
 const AddKaryawan = React.lazy(() => import('./views/InputKaryawan/AddKaryawan'));
+const detailkaryawan = React.lazy(() => import('./views/DetailKaryawan/detailkaryawan'));
 
 
 // https://github.com/ReactTraining/react-router/tree/master/packages/react-router-config
@@ -93,6 +94,7 @@ const routes = [
   { path: '/list-karyawan', name: 'List Karyawan', component: ListKaryawan },
   { path: '/InputKaryawan', name: 'Input Karyawan', component: InputKaryawan },
   { path: '/AddKaryawan', name: 'Add Karyawan', component: AddKaryawan },
+  { path: '/DetailKaryawan', name: 'Detail Karyawan', component: detailkaryawan },
 ];
 
 export default routes;
