@@ -1,4 +1,4 @@
-package com.example.dto.lov;
+package com.example.dto.LOV;
 
 import java.util.List;
 
