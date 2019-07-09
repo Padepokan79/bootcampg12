@@ -40,5 +40,10 @@ export default {
       url: '/detail-karyawan',
       icon: 'icon-people',
     },
+    {
+      name: 'Show Karyawan',
+      url: '/Agung',
+      icon: 'icon-list',
+    },
   ],
 };

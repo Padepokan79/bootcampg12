@@ -1,5 +1,6 @@
 import React from 'react';
 import DefaultLayout from './containers/DefaultLayout';
+import Agung from './views/showKaryawan/Agung';
 
 const Breadcrumbs = React.lazy(() => import('./views/Base/Breadcrumbs'));
 const Cards = React.lazy(() => import('./views/Base/Cards'));
@@ -43,6 +44,7 @@ const ListKaryawan = React.lazy(() => import('./views/ListKaryawan/ListKaryawan'
 const InputKaryawan = React.lazy(() => import('./views/InputKaryawan/inputkaryawan'));
 const AddKaryawan = React.lazy(() => import('./views/InputKaryawan/AddKaryawan'));
 const detailkaryawan = React.lazy(() => import('./views/DetailKaryawan/detailkaryawan'));
+const DetailKaryawan = React.lazy(() => import('./views/ListKaryawan/DetailKaryawan'));
 
 
 // https://github.com/ReactTraining/react-router/tree/master/packages/react-router-config
@@ -95,6 +97,8 @@ const routes = [
   { path: '/InputKaryawan', name: 'Input Karyawan', component: InputKaryawan },
   { path: '/AddKaryawan', name: 'Add Karyawan', component: AddKaryawan },
   { path: '/detail-karyawan', name: 'Detail Karyawan', component: detailkaryawan },
+  { path: '/Agung', name: 'Show Karyawan', component: Agung },
+  { path: '/DetailKaryawan', name: 'List Karyawan / Detail Karyawan', component: DetailKaryawan },
 ];
 
 export default routes;
