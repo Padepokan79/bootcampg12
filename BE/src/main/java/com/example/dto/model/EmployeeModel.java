@@ -37,7 +37,7 @@ public class EmployeeModel{
 	@Column(name="NO_KTP")
 	private String idNumber;
 	@Column(name="ALAMAT")
-	private byte address;
+	private String address;
 	@Column(name="TANGGAL_LAHIR")
 	private String birthDate;
 	@Column(name="MASA_KERJA")
