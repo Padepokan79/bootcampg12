@@ -31,6 +31,11 @@ export default {
       icon: 'icon-list',
     },
     {
+      name: 'Detail Hadi',
+      url: '/detail-hadi',
+      icon: 'icon-user',
+    },
+    {
       name: 'Detail Zharfan',
       url: '/detail-zharfan/DetailZharfan',
       icon: 'icon-user',
