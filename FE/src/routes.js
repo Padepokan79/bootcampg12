@@ -98,7 +98,7 @@ const routes = [
   { path: '/InputKaryawan', name: 'Input Karyawan', component: InputKaryawan },
   { path: '/detail-zharfan', name: 'Detail Zharfan', component: DetailZharfan },
   { path: '/AddKaryawan', name: 'Add Karyawan', component: AddKaryawan },
-  { path: '/detail-karyawan', name: 'Detail Karyawan', component: detailkaryawan },
+  { path: '/detail-karyawan', name: 'Detail Hasna', component: detailkaryawan },
   { path: '/Agung', name: 'Show Karyawan', component: Agung },
   { path: '/detail-hadi', name: 'Detail Hadi', component: DetailHadi },
 ];

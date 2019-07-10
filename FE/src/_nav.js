@@ -46,7 +46,7 @@ export default {
       icon: 'icon-list',
     },
     {
-      name: 'Detail Karyawan',
+      name: 'Detail Hasna',
       url: '/detail-karyawan',
       icon: 'icon-people',
     },
